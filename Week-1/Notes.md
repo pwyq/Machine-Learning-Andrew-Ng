@@ -1,3 +1,4 @@
+# Introduction
 ## What is Machine Learning?
 Definition by Arthur Samuel(1959): Field of study that gives computers the ability to learn without being explicitly programmed.  
 Definition by Tom Mitchell(1998): A computer program is said to *learn* form experience E with
@@ -14,8 +15,30 @@ improves with experience E.
 
 ## Unsupervised Learning
 - Unsupervised ML is the ML task of inferring a function to describe hidden structure from "unlabeled" data. Examples of unsupervised learning tasks include clustering (where we try to discover underlying groupings of examples) and anomaly detection (where we try to infer if some examples in a dataset do not conform to some expected pattern).
-    - E.g.: Orgnize computing clusters, Social network analysis, Market segmentation, Astronomical
-      data analysis
+- There is no feedback based on the prediction results with unsupervised learning.
+    - E.g.: Orgnize computing clusters, Social network analysis, Market segmentation, Astronomical data analysis
+- **Clustering Problem Example**: Automatically group a huge amount of genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
+- **Non-clustering Problem Example**: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment.
     - [Source separation](https://en.wikipedia.org/wiki/Source_separation): Cocktail party problem 
 **`[W,s,v]=svd((repmat(sum(x.*x,1),size(x,1),1).*x)*x');`**  
     - [GNU Octave](https://www.gnu.org/software/octave/), a great PL for algorithm prototyping
+    
+# Model and Cost Function
+## Model Representation
+### Notatoin
+m = number of training examples  
+x's = "input" variable / features  
+y's = "output" variable / "target" variable  
+(x,y) = one training example  
+(x<sup>(i)</sup>, y<sup>(i)</sup>) = i<sup>th</sup> training example  
+\theta<sub>i</sub> = i<sup>th</sup> parameter of model
+
+Hypothesis: h<sub>\theta</sub>(x) = \theta<sub>0</sub> + \theta<sub>1</sub>x
+
+## Cost Function  
+[MSE]: assets/week1-mse.png "MSE"
+![alt_text][MSE]
+Please refer to [Squared Error Function](https://en.wikipedia.org/wiki/Mean_squared_error) (aka, Mean squared error)
+
+#### Side notes
+1. Univariate = one variable
