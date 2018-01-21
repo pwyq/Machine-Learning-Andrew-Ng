@@ -31,12 +31,12 @@ x's = "input" variable / features
 y's = "output" variable / "target" variable  
 (x,y) = one training example  
 (x<sup>(i)</sup>, y<sup>(i)</sup>) = i<sup>th</sup> training example  
-\theta<sub>i</sub> = i<sup>th</sup> parameter of model
+&theta;<sub>i</sub> = i<sup>th</sup> parameter of model
 
-Hypothesis: h<sub>\theta</sub>(x) = \theta<sub>0</sub> + \theta<sub>1</sub>x
+Hypothesis:  h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
 ## Cost Function  
-[MSE]: assets/week1-mse.png "MSE"
+[MSE]: /assets/week1-mse.png "MSE"
 ![alt_text][MSE]
 Please refer to [Squared Error Function](https://en.wikipedia.org/wiki/Mean_squared_error) (aka, Mean squared error)
 
