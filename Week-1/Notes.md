@@ -5,7 +5,6 @@ Definition by Tom Mitchell(1998): A computer program is said to *learn* form exp
 respect to some task T and some performance measure P, if its performance on T, as measured by P,
 improves with experience E.
 
-
 ## Supervised Learning
 - Supervised learning is the ML task of learning a way to map input signals to output values by training a model on a set of training examples where each example is a pair consisting of an input and a __desired__ output value.
 - **Regression Problem**: try to predict results within a *continuous* output (ie, map input variables to some continuous function)
@@ -23,6 +22,7 @@ improves with experience E.
 **`[W,s,v]=svd((repmat(sum(x.*x,1),size(x,1),1).*x)*x');`**  
     - [GNU Octave](https://www.gnu.org/software/octave/), a great PL for algorithm prototyping
     
+
 # Model and Cost Function
 ## Model Representation
 ### Notatoin
@@ -35,10 +35,19 @@ y's = "output" variable / "target" variable
 
 Hypothesis:  h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
+
+# Parameter Learning
 ## Cost Function  
-[MSE]: /assets/week1-mse.png "MSE"
+[MSE]: /assets/week-1/week1-mse.png "mse"
 ![alt_text][MSE]
 Please refer to [Squared Error Function](https://en.wikipedia.org/wiki/Mean_squared_error) (aka, Mean squared error)
+
+## Gradient Descent
+[3DGD]: /assets/week-1/week1-gradient-descent-3d.png "3d-gradient-descent"
+![alt_text][3DGD]
+
+[GD]: /assets/week-1/week1-gradient-descent.png "mse"
+![alt_text][GD]
 
 #### Side notes
 1. Univariate = one variable
