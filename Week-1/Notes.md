@@ -49,5 +49,14 @@ Please refer to [Squared Error Function](https://en.wikipedia.org/wiki/Mean_squa
 [GD]: /assets/week-1/week1-gradient-descent.png "mse"
 ![alt_text][GD]
 
+**"Batch" Gradient Descent**: Each step of gradient descent uses all the training examples.
+
+##### Facts
+- Gradient descent can converge even if &alpha; is kept fixed. (But &alpha; cannot be too large, or else it may fail to converge).
+- For the specific choice of cost function *J* used in linear regression, there are no local optima (other than the global optimum).
+
+# Basic Linear Algebra Review
+- Skipped
+
 #### Side notes
 1. Univariate = one variable
