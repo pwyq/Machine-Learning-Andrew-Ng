@@ -1,7 +1,7 @@
-##### Operation Name
+##### Example Operation Name
 - (Optional) notes on the operation
 ```
-Here is example command and output
+Here is example command and the corresponding output from octave
 ```
 
 ##### Addition
