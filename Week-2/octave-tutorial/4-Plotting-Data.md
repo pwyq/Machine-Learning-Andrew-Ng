@@ -1,9 +1,3 @@
-##### Example Operation Name
-- (Optional) notes on the operation
-```
-Here is example command and the corresponding output from octave
-```
-
 ##### Plotting
 ```
 >> t=[0:0.01:0.98];
@@ -27,7 +21,7 @@ warning: called from
 warning: print.m: fig2dev binary is not available.
 Some output formats are not available.
 ```
-[plot]: ./myPlot.png "plot"
+[plot]: ../../assets/week-2/myPlot.png "plot"
 ![alt_text][plot]
 
 ##### More
@@ -36,8 +30,12 @@ Some output formats are not available.
 >> close all 				% close all figures
 >> figure(1); plot(t,y1);	% plot in window 'figure1'
 >> figure(2); plot(t,y2);	% plot in window 'figure2'
+>> subplot(1,2,1);          % Divides plot into a 1x2 grid, access first element
+>> plot(t,y1);
+>> subplot(1,2,2);
+>> plot(t,y2);
 ```
-[subplot]: ./myPlot2.png "subplot"
+[subplot]: ../../assets/week-2/myPlot2.png "subplot"
 ![alt_text][subplot]
 
 ##### More
@@ -52,8 +50,8 @@ Some output formats are not available.
 >> imagesc(A) 				% Display a scaled version of the matrix IMG as a color image
 >> imagesc(A), colorbar, colormap gray;		% comma chaining command
 ```
-[color]: ./color-plot.png "color"
+[color]: ../../assets/week-2/color-plot.png "color"
 ![alt_text][color]
 
-[gray]: ./grey-plot.png "gray"
+[gray]: ../../assets/week-2/grey-plot.png "gray"
 ![alt_text][gray]

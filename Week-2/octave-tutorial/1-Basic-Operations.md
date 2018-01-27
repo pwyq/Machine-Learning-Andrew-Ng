@@ -1,9 +1,3 @@
-##### Example Operation Name
-- (Optional) notes on the operation
-```
-Here is example command and the corresponding output from octave
-```
-
 ##### Addition
 ```
 >> 5+6  

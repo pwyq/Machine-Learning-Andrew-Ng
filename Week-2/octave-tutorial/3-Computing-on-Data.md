@@ -1,9 +1,3 @@
-##### Example Operation Name
-- (Optional) notes on the operation
-```
-Here is example command and the corresponding output from octave
-```
-
 ##### Matrix Operations
 ```
 >> A = [1 2;3 4; 5 6]
