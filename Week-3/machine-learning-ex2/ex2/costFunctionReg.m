@@ -38,7 +38,7 @@ J = (1/m) * sum(-y'*log(hypothesis) - (1 .- y)'*log(1 .- hypothesis)) + ...
 
 
 % Here, I believe method#2 above is more efficient than method#1 above.
-# No, in general, approach 2 is efficient than approach 1
+% No, in general, approach 2 is efficient than approach 1
 % =============================================================
 
 end
