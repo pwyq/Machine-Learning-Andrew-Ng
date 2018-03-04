@@ -26,12 +26,39 @@ centroids = zeros(K, n);
 % Note: You can use a for-loop over the centroids to compute this.
 %
 
+% X     := data set; each row is one data point
+% idx   := centroid assignment
+% K     := number of centroid
+% m = 300, n = 2
+
+for j = 1:K
+    size(j) = 0;
+endfor
+
+tmp = zeros(K, n);
+
+for i = 1:m
+    for j = 1:K
+        if (idx(i) == j)
+            tmp(j,:) = tmp(j,:) + X(i,:);
+            size(j) = size(j) + 1;
+        endif
+    endfor
+endfor
+
+for j = 1:K
+    centroids(j,:) = tmp(j,:)/size(j);
+endfor
 
 
-
-
-
-
+% =========a soln online==========
+%for i = 1:K
+%    c_i = idx==i;                          % find corresponding centroid assignment of each point
+%    n_i = sum(c_i);                        % count the total of assignment, which is the size(j) thing I did above
+%    c_i_matrix = repmat(c_i,1,n);          % duplicate the coln
+%    X_c_i = X .* c_i_matrix;               % only count those point that matches
+%    centroids(i,:) = sum(X_c_i) ./ n_i;
+%end
 
 % =============================================================
 

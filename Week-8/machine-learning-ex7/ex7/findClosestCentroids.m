@@ -21,11 +21,21 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+% idx(i) := index of the centroid that is clsoet to x(i)
 
-
-
-
-
+for i = 1:size(X,1)
+    tmp_min = Inf;
+    for j = 1:K
+        curr = sum((X(i,:) .- centroids(j,:)).^2);
+        % x = [1 2; 3 4];
+        % x(1) = 1;
+        % x(1,:) = 1 2;
+        if (curr < tmp_min)
+            idx(i) = j;
+            tmp_min = curr;
+        endif
+    end
+end
 
 % =============================================================
 
